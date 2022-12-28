@@ -1,0 +1,23 @@
+.todo-container {
+  background-color: #9aa4de;
+  display: flex;
+  .todo-list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 1s ease;
+    .list {
+      display: inline-flex;
+      width: 180px;
+    }
+    .complete-btn,
+    .trash-btn {
+      background: none;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 2px;
+    }
+  }
+}

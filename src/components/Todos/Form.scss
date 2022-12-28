@@ -1,0 +1,37 @@
+.form {
+  margin: 0;
+  padding: 5px;
+  box-shadow: 5px grey;
+  max-width: 500px;
+  width: 400px;
+  height: auto;
+  background-color: #9aa4de;
+  .input {
+    display: flex;
+    justify-content: space-around;
+    .todo-input {
+      width: 300px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+    }
+    .btn {
+      background-color: #bbbed0;
+      border: none;
+      border-radius: 5px;
+      width: 50px;
+    }
+  }
+}
+.select {
+  background-color: #9aa4de;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 3px;
+  width: 400px;
+  height:40px;
+  border-radius: none;
+  border: none;
+  text-align: center;
+}
