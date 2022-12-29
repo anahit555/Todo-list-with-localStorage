@@ -1,6 +1,7 @@
 import React from "react";
-import "./TodoItem.scss";
 import { FaTrash, FaCheckCircle } from "react-icons/fa";
+
+import "./styles.scss";
 
 function TodoItem({ text, todo, todos, setTodos }) {
   //Event Handlers

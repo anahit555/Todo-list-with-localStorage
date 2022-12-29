@@ -1,6 +1,6 @@
-import "./Form.scss";
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+
+import "./styles.scss";
 
 function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
   useEffect(() => {
@@ -25,6 +25,7 @@ function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
     }
     setInputText("");
   };
+
   const statusHandler = (e) => {
     setStatus(e.target.value);
   };

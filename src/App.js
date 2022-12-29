@@ -1,9 +1,9 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import All from "./components/pages/All";
-import Layout from "./components/layout/Layout";
-import Completed from "./components/pages/Completed";
-import Uncompleted from "./components/pages/Uncompleted";
+import All from "./pages/All";
+import Layout from "./layout/Layout";
+import Completed from "./pages/Completed";
+import Uncompleted from "./pages/Uncompleted";
 
 function App() {
   return (

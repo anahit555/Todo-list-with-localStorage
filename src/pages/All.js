@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Form from "../Todos/Form";
-import TodoList from "../Todos/TodoList";
+import Form from "../components/Form";
+import TodoList from "../components/TodoList";
 
 function All() {
   const [inputText, setInputText] = useState("");
