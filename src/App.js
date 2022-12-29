@@ -1,17 +1,16 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import All from "./pages/All";
 import Layout from "./layout/Layout";
-import Completed from "./pages/Completed";
-import Uncompleted from "./pages/Uncompleted";
+import routes from './config/routes';
+
+import "./App.css";
 
 function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<All />}></Route>
-        <Route path="/completed" element={<Completed />}></Route>
-        <Route path="/uncompleted" element={<Uncompleted />}></Route>
+        {routes.map(route => (
+          <Route key={route.path} path={route.path} element={<route.component />}></Route>
+        ))}
       </Routes>
     </Layout>
   );

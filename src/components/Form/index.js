@@ -1,12 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import "./styles.scss";
 
-function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
-  useEffect(() => {
-    localStorage.setItem("name", JSON.stringify(todos));
-  }, [todos]);
-
+function Form({ inputText, setInputText, todos, setTodos }) {
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -26,19 +22,8 @@ function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
     setInputText("");
   };
 
-  const statusHandler = (e) => {
-    setStatus(e.target.value);
-  };
-
   return (
     <form className="form">
-      <div>
-        <select onChange={statusHandler} name="todos" className="select">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="uncompleted">Uncompleted</option>
-        </select>
-      </div>
       <div className="input">
         <input
           className="todo-input"

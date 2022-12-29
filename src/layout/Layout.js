@@ -1,10 +1,11 @@
 import "./Layout.scss";
-import MainNavigation from "./MainNavigation";
+import Navigation from "../components/Navigation";
+import { TODO_STATUSES } from "../config";
 
 function Layout(props) {
   return (
     <div>
-      <MainNavigation />
+      <Navigation items={TODO_STATUSES} />
       <main className="main">{props.children}</main>
     </div>
   );
